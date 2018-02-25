@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.RerySuryani_1202154358_Modul3.com.example.android.RerySuryani_1202154358_Modul3.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/titleDetail"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageDetail"
+            android:fontFamily="serif"
+            android:padding="8dp"
+            android:text="Title"
+            android:textColor="@color/cardview_dark_background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/subTitleDetail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleDetail"
+            android:fontFamily="serif"
+            android:padding="8dp"
+            android:text="@string/filler_text" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/subTitleDetail"
+            android:src="@drawable/ic_battery_2l"/>
+        
+        <RelativeLayout
+            android:layout_marginTop="450dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="52dp"
+                android:layout_toStartOf="@+id/textView"
+                android:background="@color/button"
+                android:onClick="IncreaseScore"
+                android:src="@drawable/ic_plus" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="serif"
+                android:text="2L" />
+
+            <ImageView
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:layout_toEndOf="@+id/textView"
+                android:onClick="DecreaseScore"
+                android:src="@drawable/ic_minus"
+                android:background="@color/button"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
